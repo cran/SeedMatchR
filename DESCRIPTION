@@ -1,9 +1,13 @@
 Package: SeedMatchR
 Title: Find Matches to Canonical SiRNA Seeds in Genomic Features
-Version: 1.0.1
+Version: 1.1.1
 Authors@R: 
     c(person("Tareian", "Cazares", , "tareian.cazares@lilly.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4624-6156")),
+      person("Gulcin", "Ozer", , "ozer_gulcin@lilly.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-8315-8051")),
+      person("Jibo", "Wang", , , role = c("aut")),
+      person("Rick", "Higgs", , , role = c("aut")),
       person("Eli Lilly and Company", role = c("cph")))
 Description: On-target gene knockdown using siRNA ideally results from binding 
     fully complementary regions in mRNA transcripts to induce cleavage. 
@@ -26,16 +30,19 @@ RoxygenNote: 7.2.3
 biocViews:
 Suggests: knitr, rmarkdown, testthat (>= 3.0.0), org.Rn.eg.db
 Config/testthat/edition: 3
-Imports: dplyr, Biostrings, DESeq2, ggmsa, msa (>= 1.4.3), ggplot2,
-        utils, AnnotationHub, GenomeInfoDb, GenomicFeatures,
-        twosamples, cowplot, testit, lifecycle, stringr, tools
+Imports: dplyr, Biostrings, ggmsa, msa, ggplot2, utils, AnnotationHub,
+        GenomeInfoDb, GenomicFeatures, cowplot, testit, lifecycle,
+        stringr, stats
 VignetteBuilder: knitr
 Depends: R (>= 4.1.0)
 URL: https://tacazares.github.io/SeedMatchR/
 NeedsCompilation: no
-Packaged: 2023-06-19 20:14:08 UTC; l199328
+Packaged: 2023-10-24 14:16:38 UTC; l199328
 Author: Tareian Cazares [aut, cre] (<https://orcid.org/0000-0003-4624-6156>),
+  Gulcin Ozer [aut] (<https://orcid.org/0000-0002-8315-8051>),
+  Jibo Wang [aut],
+  Rick Higgs [aut],
   Eli Lilly and Company [cph]
 Maintainer: Tareian Cazares <tareian.cazares@lilly.com>
 Repository: CRAN
-Date/Publication: 2023-06-20 17:40:06 UTC
+Date/Publication: 2023-10-24 20:30:02 UTC
